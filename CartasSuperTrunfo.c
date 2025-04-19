@@ -12,8 +12,7 @@
        float densidade1;
        float pibpercapita1;
        float superpoder1;
-       // Variaveis para a Carta 2
-
+     
        // Dados da Carta 2
         char estado2;
         char codigo2[4];
@@ -39,7 +38,7 @@
         scanf(" %s", cidade1);
 
         printf("Informe a populacao: ");
-        scanf("%d", &populacao1);
+        scanf("%lu", &populacao1);
 
         printf("Informe a area da cidade (em km2): ");
         scanf("%f", &area1);
@@ -54,7 +53,7 @@
         printf("\nCadastro da Carta 2\n");
 
         printf("Informe o estado (letra A a H): ");
-        scanf("%c", &estado2);
+        scanf(" %c", &estado2);
 
         printf("Informe o codigo da carta (ex:A02): ");
         scanf("%s", codigo2);
@@ -63,7 +62,7 @@
         scanf("%s", cidade2);
 
         printf("informe a populacao da cidade: ");
-        scanf("%d", &populacao2);
+        scanf("%lu", &populacao2);
 
         printf("Informe a area da cidade (em km2): ");
         scanf("%f", &area2);
@@ -88,7 +87,7 @@
         printf("Estado: %c\n", estado1);
         printf("Codigo: %s\n", codigo1);
         printf("Cidade: %s\n", cidade1);
-        printf("Populacao: %d\n", populacao1);
+        printf("Populacao: %lu\n", populacao1);
         printf("Area: %.2f km2\n", area1);
         printf("PIB: %.2f bilhoes de reais\n", pib1);
         printf("Pontos turisticos: %d\n", pontoturistico1);
@@ -102,7 +101,7 @@
         printf("Estado: %c\n", estado2);
         printf("Codigo: %s\n", codigo2);
         printf("Cidade: %s\n", cidade2);
-        printf("Populacao: %d\n", populacao2);
+        printf("Populacao: %lu\n", populacao2);
         printf("Area: %.2f km2\n", area2);
         printf("PIB: %.2f bilhoes de reais\n", pib2);
         printf("Pontos turisticos: %d\n", potonturistico2);
@@ -162,5 +161,5 @@
         printf("PIB per capita: %d\n", pibpercapita1 > pibpercapita2);
         printf("Super Poder: %d\n", superpoder1 > superpoder2);
 
-    return 0;
+     return 0;
     }
